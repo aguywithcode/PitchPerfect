@@ -13,10 +13,12 @@ class PlaySoundsViewController: UIViewController {
 
     var player:AVAudioPlayer!
     var receivedAudio:RecordedAudio!
+    var audioEngine:AVAudioEngine!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let url = receivedAudio.filePathUrl
+        audioEngine = AVAudioEngine()
         do{
             player = try AVAudioPlayer(contentsOfURL: url)
             player.enableRate = true
@@ -36,6 +38,10 @@ class PlaySoundsViewController: UIViewController {
         player.play()
     }
 
+    @IBAction func playChipmunk(sender: UIButton) {
+        
+    }
+    
     @IBAction func playSoundFast(sender: UIButton) {
         player.stop()
         player.rate = 2.0
