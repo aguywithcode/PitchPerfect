@@ -132,6 +132,13 @@
                                     <action selector="playChipmunk:" destination="gl3-uT-o1Q" eventType="touchUpInside" id="7Yp-9n-nVC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d00-mB-Ytn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="darth"/>
+                                <connections>
+                                    <action selector="playVader:" destination="gl3-uT-o1Q" eventType="touchUpInside" id="0LY-94-vyI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -139,8 +146,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="V1e-QB-wAB" secondAttribute="trailing" id="DSk-Dv-mhd"/>
                             <constraint firstItem="V3K-9U-dUK" firstAttribute="top" secondItem="6i4-Xa-Jl9" secondAttribute="bottom" constant="8" id="LKO-dU-Dub"/>
                             <constraint firstAttribute="leadingMargin" secondItem="V3K-9U-dUK" secondAttribute="leading" id="e5S-hU-JeG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="d00-mB-Ytn" secondAttribute="trailing" id="hAG-u1-swo"/>
                             <constraint firstItem="biO-bX-Y31" firstAttribute="top" secondItem="dV1-cx-ecG" secondAttribute="bottom" constant="10" id="hpy-tg-gzX"/>
                             <constraint firstItem="Csh-eL-0u3" firstAttribute="centerY" secondItem="SPP-Y3-vBw" secondAttribute="centerY" id="p8X-ej-Fuy"/>
+                            <constraint firstItem="d00-mB-Ytn" firstAttribute="centerY" secondItem="SPP-Y3-vBw" secondAttribute="centerY" id="sD3-AG-5HN"/>
                             <constraint firstItem="V1e-QB-wAB" firstAttribute="top" secondItem="6i4-Xa-Jl9" secondAttribute="bottom" constant="8" id="ufc-U0-sKS"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Csh-eL-0u3" secondAttribute="leading" id="wZG-dE-exK"/>
                         </constraints>
@@ -150,6 +159,7 @@
                                 <exclude reference="V1e-QB-wAB"/>
                                 <exclude reference="dV1-cx-ecG"/>
                                 <exclude reference="Csh-eL-0u3"/>
+                                <exclude reference="d00-mB-Ytn"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="LKO-dU-Dub"/>
@@ -158,6 +168,8 @@
                                 <exclude reference="ufc-U0-sKS"/>
                                 <exclude reference="p8X-ej-Fuy"/>
                                 <exclude reference="wZG-dE-exK"/>
+                                <exclude reference="hAG-u1-swo"/>
+                                <exclude reference="sD3-AG-5HN"/>
                                 <exclude reference="4rv-0k-D0P"/>
                                 <exclude reference="hpy-tg-gzX"/>
                             </mask>
@@ -168,6 +180,7 @@
                                 <include reference="V1e-QB-wAB"/>
                                 <include reference="dV1-cx-ecG"/>
                                 <include reference="Csh-eL-0u3"/>
+                                <include reference="d00-mB-Ytn"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="LKO-dU-Dub"/>
@@ -176,6 +189,8 @@
                                 <include reference="ufc-U0-sKS"/>
                                 <include reference="p8X-ej-Fuy"/>
                                 <include reference="wZG-dE-exK"/>
+                                <include reference="hAG-u1-swo"/>
+                                <include reference="sD3-AG-5HN"/>
                                 <include reference="4rv-0k-D0P"/>
                                 <include reference="hpy-tg-gzX"/>
                             </mask>
@@ -207,6 +222,7 @@
     </scenes>
     <resources>
         <image name="chipmunk" width="100" height="100"/>
+        <image name="darth" width="100" height="100"/>
         <image name="microphone" width="100" height="100"/>
         <image name="playFast" width="100" height="100"/>
         <image name="playSlow" width="100" height="100"/>
